@@ -9,7 +9,7 @@ function Header() {
         <p className={styles.ocupationStyle}>Full Stack Developer</p>
       </div>
       <div className={styles.subContainer}>
-        <img src="assets\profilePhoto.jpeg" className={styles.photo} />
+        <img src="assets/profilePhoto.jpeg" className={styles.photo} />
       </div>
     </header>
   );
