@@ -27,8 +27,8 @@
 }
 .photo {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   box-shadow: 5px 3px 5px #000;
   object-fit: cover;
 }

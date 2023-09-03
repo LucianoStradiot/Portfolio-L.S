@@ -1,3 +1,7 @@
+.main {
+    background: linear-gradient(to bottom, #ffffff, #382039);
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -5,3 +9,13 @@
     margin: 0 40px;
 }
 
+.boxParagraph {
+    padding: 20px;
+    margin: 20px 40px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.paragraph {
+    margin: 0;
+}

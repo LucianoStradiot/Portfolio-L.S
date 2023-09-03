@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p>© Luciano Stradiot</p>
+        <p className={styles.copyright}>© Luciano Stradiot</p>
         <div className={styles.subContainer}>
           <a
             href="https://www.linkedin.com/in/luciano-stradiot-343a98142/"
