@@ -1,0 +1,140 @@
+.menuButton {
+    display: block;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menuButton:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .bar {
+    width: 25px;
+    height: 4px;
+    background-color: #683D69;
+    margin: 4px 0;
+    transform:  translate(0%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 1px 4px #000;
+  }
+
+  .x1 {
+    width: 25px;
+    height: 4px;
+    background-color: #683D69;
+    margin: 4px 0;
+    transform: rotate(-45deg) translate(-3px, 6px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  .x2 {
+    width: 25px;
+    height: 4px;
+    background-color: #683D69;
+    margin: 4px 0;
+    transform: rotate(45deg) translate(0px, -2px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 2px 5px #000;
+  }
+/* This is when the menu folds */
+
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background-color: #683D69;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  .menu ul {
+    padding: 0 10px;
+    list-style: none;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  /* This is when the menu displays */
+
+  .activeMenu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    opacity: 1;
+    text-align: center;
+    transform: translateX(-75%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background-color: #683D69;
+    border-radius: 10px;
+  }
+
+  .activeMenu ul {
+    padding: 0 10px;
+    list-style: none;
+  }
+
+  .activeMenu li {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .activeMenu li:hover {
+    background-color: #000;
+    box-shadow: 5px 5px 5px #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .activeMenu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  @media only screen and (min-width: 601px) {
+     .menuButton {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    text-align: left;
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  }
