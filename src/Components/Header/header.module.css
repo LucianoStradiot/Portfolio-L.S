@@ -1,0 +1,35 @@
+/* Vista movil*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(circle at 10% 60%, #683D69, #382039);
+}
+
+.subContainer {
+    margin: 20px 30px 20px 40px;
+    color: #fff;
+}
+
+.nameStyle {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.ocupationStyle {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+.photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 5px 3px 5px #000;
+  object-fit: cover;
+}
+
