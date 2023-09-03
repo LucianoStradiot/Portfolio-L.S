@@ -29,7 +29,7 @@
     margin: 4px 0;
     transform: rotate(-45deg) translate(-3px, 6px);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 1px 2px 5px #000;
+    box-shadow: -1px 2px 5px #000;
   }
 
   .x2 {
@@ -46,7 +46,7 @@
   .menu {
     position: absolute;
     right: 0;
-    top: 20%;
+    top: 166px;
     text-align: center;
     border-radius: 10px;
     opacity: 0;
@@ -79,10 +79,10 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 20%;
+    top: 166px;
     opacity: 1;
     text-align: center;
-    transform: translateX(-75%);
+    transform: translateX(-70%);
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     background-color: #683D69;
     border-radius: 10px;
