@@ -22,26 +22,24 @@ function Home() {
       </section>
       <section>
         <div className={styles.containerLanguages}>
-          <h2>Languages</h2>
-          <div className={styles.languages}>
-            <img src="assets/html5.svg" className={styles.icons} />
-            <img src="assets/css3.svg" className={styles.icons} />
-            <img src="assets/javascript.svg" className={styles.icons} />
+          <h2>Technologies</h2>
+          <div className={styles.languages1}>
+            <img src="assets/html5.svg" className={styles.icons} alt="HTML5" />
+            <img src="assets/css3.svg" className={styles.icons} alt="CSS3" />
+            <img src="assets/javascript.svg" className={styles.icons} alt="JavaScript" />
+            <img src="assets/nodejs.svg" className={styles.icons} alt="NodeJs" />
           </div>
-          <div className={styles.languages}>
-            <img src="assets/nodejs.svg" className={styles.icons} />
-            <img src="assets/express.svg" className={styles.icons} />
-            <img src="assets/mongodb.svg" className={styles.icons} />
+          <div className={styles.languages2}>
+            <img src="assets/express.svg" className={styles.icons} alt="Express" />
+            <img src="assets/mongodb.svg" className={styles.icons} alt="MongoDb" />
+            <img src="assets/react.svg" className={styles.icons} alt="ReactJs" />
+            <img src="assets/redux.svg" className={styles.icons} alt="ReduxJs" />
           </div>
-          <div className={styles.languages}>
-            <img src="assets/react.svg" className={styles.icons} />
-            <img src="assets/redux.svg" className={styles.icons} />
-            <img src="assets/postman.svg" className={styles.icons} />
-          </div>
-          <div className={styles.languages}>
-            <img src="assets/trello.svg" className={styles.icons} />
-            <img src="assets/github.svg" className={styles.icons} />
-            <img src="assets/scrum.svg" className={styles.icons} />
+          <div className={styles.languages1}>
+            <img src="assets/firebase.svg" className={styles.icons} alt="Firebase" />
+            <img src="assets/scrum.svg" className={styles.icons} alt="Scrum" />
+            <img src="assets/trello.svg" className={styles.icons} alt="Trello" />
+            <img src="assets/github.svg" className={styles.icons} alt="Github" />
           </div>
         </div>
       </section>
