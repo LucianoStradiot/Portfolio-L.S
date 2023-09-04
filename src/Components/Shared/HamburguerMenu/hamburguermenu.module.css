@@ -58,6 +58,7 @@
     background-color: #683D69;
     pointer-events: none;
     cursor: not-allowed;
+    z-index: 1;
   }
 
   .menu ul {
@@ -89,6 +90,7 @@
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     background-color: #683d69;
     border-radius: 10px;
+    z-index: 1;
   }
 
   .activeMenu ul {
