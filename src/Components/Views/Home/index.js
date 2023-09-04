@@ -19,8 +19,30 @@ function Home() {
             development.
           </p>
         </div>
-        <div className={styles.container}>
+      </section>
+      <section>
+        <div className={styles.containerLanguages}>
           <h2>Languages</h2>
+          <div className={styles.languages}>
+            <img src="assets/html5.svg" className={styles.icons} />
+            <img src="assets/css3.svg" className={styles.icons} />
+            <img src="assets/javascript.svg" className={styles.icons} />
+          </div>
+          <div className={styles.languages}>
+            <img src="assets/nodejs.svg" className={styles.icons} />
+            <img src="assets/express.svg" className={styles.icons} />
+            <img src="assets/mongodb.svg" className={styles.icons} />
+          </div>
+          <div className={styles.languages}>
+            <img src="assets/react.svg" className={styles.icons} />
+            <img src="assets/redux.svg" className={styles.icons} />
+            <img src="assets/postman.svg" className={styles.icons} />
+          </div>
+          <div className={styles.languages}>
+            <img src="assets/trello.svg" className={styles.icons} />
+            <img src="assets/github.svg" className={styles.icons} />
+            <img src="assets/scrum.svg" className={styles.icons} />
+          </div>
         </div>
       </section>
     </main>

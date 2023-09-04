@@ -14,8 +14,30 @@
     margin: 20px 40px;
     background-color: aliceblue;
     box-shadow: 5px 5px 5px #000;
+    border-radius: 5px;
 }
 
 .paragraph {
     margin: 0;
+    font-style: italic;
+}
+
+.containerLanguages {
+    margin: 0 40px;
+    
+}
+
+.languages {
+   display: inline-block;
+   align-content: center;
+
+}
+
+.icons {
+    width: 13%;
+    height: 13%;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10%;
+    background-color: #00000021;
 }
