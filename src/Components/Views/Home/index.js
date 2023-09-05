@@ -12,7 +12,7 @@ function Home() {
       <section>
         <div className={styles.boxParagraph}>
           <p className={styles.paragraph}>
-            My name is Luciano and I am currently in my second year of the Software Development
+            My name is Luciano and I am currently in my second year of a Software Development
             collegue carrer and I have just graduated as a Full Stack Developer from the Bootcamp
             `Become a Software Professional` of the company Radium Rocket. My main interest is to
             continue developing myself in the world of programming, software and application
