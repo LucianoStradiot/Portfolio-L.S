@@ -54,6 +54,7 @@ function Projects() {
               <>
                 <a
                   href="https://mega-rocket-app.vercel.app/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.projectLink}
                 >
@@ -68,7 +69,7 @@ function Projects() {
         </div>
         <div className={styles.sectionProjects}>
           <img
-            src="assets/nutritionistValen.jpg"
+            src="assets/nutritionistValen.png"
             alt="nutritionist-valentina"
             className={styles.projectsImages2}
           />
