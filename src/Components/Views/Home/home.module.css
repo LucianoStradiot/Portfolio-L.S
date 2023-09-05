@@ -1,5 +1,6 @@
 .main {
     background: linear-gradient(to bottom, #ffffff, #382039);
+    overflow-x: hidden;
 }
 
 .container {
@@ -12,7 +13,7 @@
 
 .boxParagraph {
     padding: 20px;
-    margin: 20px 40px;
+    margin: 10% 40px;
     background-color: aliceblue;
     box-shadow: 5px 5px 5px #000;
     border-radius: 5px;
@@ -26,19 +27,19 @@
     font-style: italic;
 }
 
-.containerLanguages {
-    margin: 0 40px;
+.containerTechnologies {
+    margin: 15% 40px;
     color: #fff;
 }
 
-.languages1 {
+.technologies1 {
 opacity: 0;
 transform: translateX(-100px);
 animation: slideInFromLeft 1s ease-in forwards;
 text-align: center;
 }
 
-.languages2 {
+.technologies2 {
 opacity: 0;
 transform: translateX(100px);
 animation: slideInFromRight 1s ease-in forwards;
