@@ -7,7 +7,7 @@ const WspButton = () => {
     <>
       <div>
         <a
-          href="https://api.whatsapp.com/send?phone=5492477662098&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre..."
+          href="https://api.whatsapp.com/send?phone=5492477309076&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre..."
           className={`${styles.btnWsp} ${styles.pulse}`}
           id="btn"
           target="_blank"
