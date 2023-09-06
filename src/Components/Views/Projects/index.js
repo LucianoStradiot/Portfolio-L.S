@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './projects.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
+import WspButton from '../../Shared/WspButton';
 
 function Projects() {
   const [showMegarocketContent, setShowMegarocketContent] = useState(false);
@@ -35,6 +36,7 @@ function Projects() {
       <div className={styles.container}>
         <h2>Projects</h2>
         <HamburguerMenu />
+        <WspButton />
       </div>
       <section>
         <div className={styles.sectionProjects}>
@@ -47,7 +49,7 @@ function Projects() {
             {getShortenedContent(megarocketContent, 1)}
             {!showMegarocketContent && (
               <button className={styles.readmoreBtn} onClick={() => toggleContent(1)}>
-                Read More
+                Read More...
               </button>
             )}
             {showMegarocketContent && (
@@ -77,7 +79,7 @@ function Projects() {
             {getShortenedContent(nutritionistContent, 2)}
             {!showNutritionistContent && (
               <button className={styles.readmoreBtn} onClick={() => toggleContent(2)}>
-                Read More
+                Read More...
               </button>
             )}
             {showNutritionistContent && (
