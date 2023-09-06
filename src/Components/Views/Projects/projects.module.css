@@ -1,6 +1,110 @@
+.main {
+    background: linear-gradient(to bottom, #ffffff, #382039);
+    overflow-x: hidden;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 40px;
+    color: #683D69;
 }
+
+.sectionProjects {
+    margin: 20px 40px;
+}
+
+.projectsImages1 {
+    width: 100%;
+    box-shadow: 4px 4px 8px #000;
+    opacity: 0;
+    border-radius: 5px;
+    transform: translateX(-100px);
+    animation: slideInFromRight 1s ease-in forwards;
+    object-fit: contain;
+}
+
+.projectsImages2 {
+    width: 100%;
+    box-shadow: 4px 4px 8px #000;
+    opacity: 0;
+    border-radius: 5px;
+    transform: translateX(-100px);
+    animation: slideInFromRight 1s ease-in forwards;
+    object-fit: contain;
+}
+
+.boxParagraph1 {
+    padding: 20px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 8px #000;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInFromLeft 1s ease-in forwards;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.boxParagraph2 {
+    padding: 20px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 8px #000;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInFromLeft 1s ease-in forwards;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.readmoreBtn {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  box-shadow: 2px 2px 5px #000;
+  background-color: #683D69;
+  color: #fff;
+}
+
+.projectLink {
+  display: block;
+  padding: 5px;
+  margin: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #683D69;
+  font-style: normal;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

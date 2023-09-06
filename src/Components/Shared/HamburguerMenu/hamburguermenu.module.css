@@ -1,11 +1,11 @@
 .menuButton {
-    display: block;
-    cursor: pointer;
     margin: 20px 0 20px 0;
+    position: fixed;
+    top: 134px;
+    right: 40px;
     background-color: transparent;
-    border: none;
-    outline: none;
-    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
   }
 
   .menuButton:hover {
@@ -44,7 +44,7 @@
 /* This is when the menu folds */
 
   .menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 159px;
     text-align: center;
@@ -55,6 +55,7 @@
     background-color: #683D69;
     pointer-events: none;
     cursor: not-allowed;
+    z-index: 1;
   }
 
   .menu ul {
@@ -77,7 +78,7 @@
 
   .activeMenu {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 159px;
     opacity: 1;
@@ -86,6 +87,7 @@
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     background-color: #683d69;
     border-radius: 10px;
+    z-index: 1;
   }
 
   .activeMenu ul {
