@@ -10,7 +10,7 @@ function HamburguerMenu() {
   };
 
   return (
-    <section>
+    <>
       <div className={styles.menuButton} id="menuButton" onClick={toggleMenu}>
         <div className={`${menuOpen ? styles.x1 : styles.bar}`}></div>
         <div className={`${menuOpen ? styles.x2 : styles.bar}`}></div>
@@ -29,7 +29,7 @@ function HamburguerMenu() {
           </li>
         </ul>
       </nav>
-    </section>
+    </>
   );
 }
 
