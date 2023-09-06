@@ -66,7 +66,7 @@
 .readmoreBtn {
   display: block;
   padding: 5px 10px;
-  margin: 10px 0;
+  margin: 10px auto;
   border-radius: 5px;
   border: none;
   text-align: center;

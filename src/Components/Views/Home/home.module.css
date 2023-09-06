@@ -32,6 +32,10 @@
     color: #fff;
 }
 
+.wraperTechnologies {
+  margin-top: 40px;
+}
+
 .technologies1 {
 opacity: 0;
 transform: translateX(-100px);
