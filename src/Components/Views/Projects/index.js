@@ -34,8 +34,8 @@ function Projects() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h2>Projects</h2>
         <HamburguerMenu />
+        <h2>Projects</h2>
         <WspButton />
       </div>
       <section>

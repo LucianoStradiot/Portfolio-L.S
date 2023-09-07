@@ -7,8 +7,8 @@ function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h2>Welcome</h2>
         <HamburguerMenu />
+        <h2>Welcome</h2>
         <WspButton />
       </div>
       <section>

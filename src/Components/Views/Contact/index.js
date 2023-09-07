@@ -7,8 +7,8 @@ function Contact() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h2>Contact</h2>
         <HamburguerMenu />
+        <h2>Contact</h2>
         <WspButton />
       </div>
       <form>
