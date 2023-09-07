@@ -1,142 +1,174 @@
 .menuButton {
-    margin: 20px 0 20px 0;
-    position: fixed;
-    top: 134px;
-    right: 40px;
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 1;
-  }
+  margin: 20px 0 20px 0;
+  position: fixed;
+  top: 134px;
+  right: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
 
-  .menuButton:hover {
-    transform: scale(1.1, 1.1);
-  }
+.menuButton:hover {
+  transform: scale(1.1, 1.1);
+}
 
-  .bar {
-    width: 25px;
-    height: 4px;
-    background-color: #683D69;
-    margin: 4px 0;
-    transform:  translate(0%);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 1px 1px 4px #000;
-  }
+.bar {
+  width: 25px;
+  height: 4px;
+  background-color: #683d69;
+  margin: 4px 0;
+  transform: translate(0%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 1px 1px 4px #000;
+}
 
-  .x1 {
-    width: 25px;
-    height: 4px;
-    background-color: #683D69;
-    margin: 4px 0;
-    transform: rotate(-45deg) translate(-3px, 6px);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: -1px 2px 5px #000;
-  }
+.x1 {
+  width: 25px;
+  height: 4px;
+  background-color: #683d69;
+  margin: 4px 0;
+  transform: rotate(-45deg) translate(-3px, 6px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: -1px 2px 5px #000;
+}
 
-  .x2 {
-    width: 25px;
-    height: 4px;
-    background-color: #683D69;
-    margin: 4px 0;
-    transform: rotate(45deg) translate(0px, -2px);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 1px 2px 5px #000;
-  }
+.x2 {
+  width: 25px;
+  height: 4px;
+  background-color: #683d69;
+  margin: 4px 0;
+  transform: rotate(45deg) translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 1px 2px 5px #000;
+}
 /* This is when the menu folds */
 
-  .menu {
-    position: fixed;
-    right: 0;
-    top: 159px;
-    text-align: center;
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    background-color: #683D69;
-    pointer-events: none;
-    cursor: not-allowed;
-    z-index: 1;
-  }
+.menu {
+  position: fixed;
+  right: 0;
+  top: 159px;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(0%);
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  background-color: #683d69;
+  pointer-events: none;
+  cursor: not-allowed;
+  z-index: 1;
+}
 
-  .menu ul {
-    padding: 0 10px;
-    list-style: none;
-  }
+.menu ul {
+  padding: 0 10px;
+  list-style: none;
+}
 
-  .menu li {
-    margin: 10px 0;
-    padding: 0 10px;
-  }
+.menu li {
+  margin: 10px 0;
+  padding: 0 10px;
+}
 
-  .menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-  }
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
 
-  /* This is when the menu displays */
+/* This is when the menu displays */
 
-  .activeMenu {
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 159px;
-    opacity: 1;
-    text-align: center;
-    transform: translateX(-70%);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    background-color: #683d69;
-    border-radius: 10px;
-    z-index: 1;
-  }
+.activeMenu {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 159px;
+  opacity: 1;
+  text-align: center;
+  transform: translateX(-70%);
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  background-color: #683d69;
+  border-radius: 10px;
+  z-index: 1;
+}
 
-  .activeMenu ul {
-    padding: 0 10px;
-    list-style: none;
-  }
+.activeMenu ul {
+  padding: 0 10px;
+  list-style: none;
+}
 
-  .activeMenu li {
-    margin: 10px 0;
-    padding: 0 10px;
-  }
+.activeMenu li {
+  margin: 10px 0;
+  padding: 0 10px;
+}
 
-  .activeMenu li:hover {
-    background-color: #000;
-    box-shadow: 5px 5px 5px #fff;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-  }
+.activeMenu li:hover {
+  background-color: #000;
+  box-shadow: 5px 5px 5px #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
 
-  .activeMenu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-  }
+.activeMenu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
 
-  @media only screen and (min-width: 601px) {
-     .menuButton {
+@media only screen and (min-width: 601px) {
+  .menuButton {
     display: none;
   }
 
   .menu {
-    display: block;
-    text-align: left;
+    display: contents;
     background-color: #fff;
     opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
   }
 
   .menu ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
   }
 
   .menu li {
-    margin: 10px 0;
+    margin: 10px 5%;
+    position: relative;
+  }
+
+  .menu li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    background-color: #683d69;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .menu li:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 
   .menu a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
+
+  .menu a:hover {
+    color: #683d69;
+    transition: color 0.4s ease-in-out;
   }
+}
