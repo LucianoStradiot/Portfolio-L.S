@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import styles from './footer.module.css';
+import Modal from '../Shared/Modal';
 import WspButton from '../Shared/WspButton';
 
-function Footer() {
+const Footer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = React.createRef();
+  const [showMessage, setShowMessage] = useState(true);
+  const audioRef = useRef();
+  const [isOpen, setIsOpen] = useState(false);
+  const [responseModal, setResponseModal] = useState({
+    title: '',
+    description: '',
+    isConfirm: false
+  });
+
+  const openModalConfirm = () => {
+    setResponseModal({
+      title: 'Welcome!',
+      description: 'Do you want to listen some music?',
+      isConfirm: true
+    });
+    setIsOpen(true);
+  };
 
   const togglePlay = () => {
     const audioElement = audioRef.current;
@@ -16,11 +33,24 @@ function Footer() {
     }
 
     setIsPlaying(!isPlaying);
+    setShowMessage(false);
   };
+
+  useEffect(() => {
+    openModalConfirm();
+  }, []);
 
   return (
     <footer className={styles.footer}>
       <WspButton />
+      <Modal
+        title={responseModal.title}
+        desc={responseModal.description}
+        isOpen={isOpen}
+        confirmModal={responseModal.isConfirm}
+        handleClose={() => setIsOpen(!isOpen)}
+        activeFunction={() => togglePlay(setIsOpen(!isOpen))}
+      />
       <div className={styles.container}>
         <a
           href="https://www.linkedin.com/in/luciano-stradiot-343a98142/"
@@ -52,10 +82,11 @@ function Footer() {
             <source src="/synthwave.mp3" type="audio/mp3" />
             Tu navegador no soporta el elemento de audio.
           </audio>
+          {showMessage && <div className={styles.message}>Haz click aquí</div>}
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

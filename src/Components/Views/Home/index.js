@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './home.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 
-function Home() {
+const Home = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -47,6 +47,6 @@ function Home() {
       </section>
     </main>
   );
-}
+};
 
 export default Home;

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './contact.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 
-function Contact() {
+const Contact = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -66,6 +66,6 @@ function Contact() {
       </form>
     </main>
   );
-}
+};
 
 export default Contact;
