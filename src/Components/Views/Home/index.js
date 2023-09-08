@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './home.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
-import WspButton from '../../Shared/WspButton';
 
 function Home() {
   return (
@@ -9,7 +8,6 @@ function Home() {
       <div className={styles.container}>
         <HamburguerMenu />
         <h2>Welcome</h2>
-        <WspButton />
       </div>
       <section>
         <div className={styles.boxParagraph}>

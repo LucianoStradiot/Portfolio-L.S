@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './contact.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
-import WspButton from '../../Shared/WspButton';
 
 function Contact() {
   return (
@@ -9,7 +8,6 @@ function Contact() {
       <div className={styles.container}>
         <HamburguerMenu />
         <h2>Contact</h2>
-        <WspButton />
       </div>
       <form>
         <div className={styles.formContainer}>
