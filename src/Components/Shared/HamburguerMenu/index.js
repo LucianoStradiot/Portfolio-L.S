@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './hamburguermenu.module.css';
 
-function HamburguerMenu() {
+const HamburguerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -31,6 +31,6 @@ function HamburguerMenu() {
       </nav>
     </>
   );
-}
+};
 
 export default HamburguerMenu;

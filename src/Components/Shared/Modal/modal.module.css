@@ -1,0 +1,40 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #000;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.modalContainer h3,
+.modalContainer p {
+  margin-left: 5px;
+}
+
+.btnsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+}

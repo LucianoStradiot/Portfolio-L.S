@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './projects.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 
-function Projects() {
+const Projects = () => {
   const [showMegarocketContent, setShowMegarocketContent] = useState(false);
   const [showNutritionistContent, setShowNutritionistContent] = useState(false);
 
@@ -100,6 +100,6 @@ function Projects() {
       </section>
     </main>
   );
-}
+};
 
 export default Projects;
