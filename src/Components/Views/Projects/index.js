@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './projects.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
-import WspButton from '../../Shared/WspButton';
 
 function Projects() {
   const [showMegarocketContent, setShowMegarocketContent] = useState(false);
@@ -36,7 +35,6 @@ function Projects() {
       <div className={styles.container}>
         <HamburguerMenu />
         <h2>Projects</h2>
-        <WspButton />
       </div>
       <section>
         <div className={styles.sectionProjects}>
