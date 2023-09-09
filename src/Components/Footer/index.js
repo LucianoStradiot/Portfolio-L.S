@@ -5,7 +5,6 @@ import WspButton from '../Shared/WspButton';
 
 const Footer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showMessage, setShowMessage] = useState(true);
   const audioRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
   const [responseModal, setResponseModal] = useState({
@@ -33,7 +32,6 @@ const Footer = () => {
     }
 
     setIsPlaying(!isPlaying);
-    setShowMessage(false);
   };
 
   useEffect(() => {
@@ -82,7 +80,6 @@ const Footer = () => {
             <source src="/synthwave.mp3" type="audio/mp3" />
             Tu navegador no soporta el elemento de audio.
           </audio>
-          {showMessage && <div className={styles.message}>Haz click aquí</div>}
         </div>
       </div>
     </footer>
