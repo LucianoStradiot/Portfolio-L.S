@@ -24,7 +24,9 @@ const Modal = ({ title, desc, isOpen, handleClose, confirmModal, activeFunction 
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className={styles.btnContainer}>
-            <button onClick={handleClose}></button>
+            <button className={`${styles.buttonConfirm} ${styles.button}`} onClick={handleClose}>
+              Confirm
+            </button>
           </div>
         </div>
       </div>
