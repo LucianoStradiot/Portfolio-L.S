@@ -1,10 +1,16 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from '../Views/Home';
 import Projects from '../Views/Projects';
 import Contact from '../Views/Contact';
 
 function RoutesLanding() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Routes>
