@@ -51,10 +51,10 @@
 }
 
 .icons {
-  width: 13%;
-  height: 13%;
+  width: 17%;
   margin: 0 10px 10px 10px;
-  object-fit: cover;
+  object-fit: contain;
+  aspect-ratio: 2/2;
   border-radius: 10%;
   background-color: #ffffffc2;
 }

@@ -9,8 +9,12 @@ const Modal = ({ title, desc, isOpen, handleClose, confirmModal, activeFunction 
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className={styles.btnsContainer}>
-            <button onClick={activeFunction}>Yes🎧!</button>
-            <button onClick={handleClose}>No &#129323;</button>
+            <button className={`${styles.buttonConfirm} ${styles.button}`} onClick={activeFunction}>
+              Yes🎧!
+            </button>
+            <button className={`${styles.buttonCancel} ${styles.button}`} onClick={handleClose}>
+              No &#129323;
+            </button>
           </div>
         </div>
       </div>
@@ -20,7 +24,9 @@ const Modal = ({ title, desc, isOpen, handleClose, confirmModal, activeFunction 
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className={styles.btnContainer}>
-            <button onClick={handleClose}></button>
+            <button className={`${styles.buttonConfirm} ${styles.button}`} onClick={handleClose}>
+              Confirm
+            </button>
           </div>
         </div>
       </div>
