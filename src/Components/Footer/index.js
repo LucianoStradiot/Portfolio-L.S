@@ -76,7 +76,7 @@ const Footer = () => {
           ) : (
             <img src="assets/play.svg" className={`${styles.play} ${styles.images}`} alt="" />
           )}
-          <audio ref={audioRef} onLoadedData={() => setIsPlaying(false)}>
+          <audio ref={audioRef} onLoadedData={() => setIsPlaying(false)} loop>
             <source src="/synthwave.mp3" type="audio/mp3" />
             Tu navegador no soporta el elemento de audio.
           </audio>
