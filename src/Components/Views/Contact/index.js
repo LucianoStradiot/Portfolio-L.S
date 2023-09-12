@@ -28,28 +28,24 @@ const Contact = () => {
   const handleSubmit = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
+      await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
       });
-      if (response.ok) {
-        openModalConfirm();
-      }
-    } catch (error) {
-      console.error('Error al enviar el mensaje:', error);
-      alert('Ocurrió un error al enviar el mensaje');
+      setResponseModal({
+        description: 'Your message was sended succesfully',
+        isConfirm: true
+      });
+    } catch {
+      setResponseModal({
+        description: 'There was an error. Please try again.',
+        isConfirm: false
+      });
     }
     setIsLoading(false);
-  };
-
-  const openModalConfirm = () => {
-    setResponseModal({
-      description: 'Your message was sended succesfully',
-      isConfirm: true
-    });
     setIsOpen(true);
   };
 
@@ -62,7 +58,7 @@ const Contact = () => {
           <Modal
             desc={responseModal.description}
             isOpen={isOpen}
-            handleClose={() => navigate('/')}
+            handleClose={() => (responseModal.isConfirm ? navigate('/') : setIsOpen(false))}
           />
           <h2>Contact</h2>
         </div>
