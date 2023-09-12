@@ -11,6 +11,35 @@ const Contact = () => {
     description: '',
     isConfirm: false
   });
+  const [formData, setFormData] = useState({
+    name: '',
+    lastName: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      if (response.ok) {
+        openModalConfirm();
+      }
+    } catch (error) {
+      console.error('Error al enviar el mensaje:', error);
+      alert('Ocurrió un error al enviar el mensaje');
+    }
+  };
 
   const openModalConfirm = () => {
     setResponseModal({
@@ -38,6 +67,8 @@ const Contact = () => {
               name="name"
               type="text"
               placeholder="Write your name here"
+              value={formData.name}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -49,6 +80,8 @@ const Contact = () => {
               name="lastName"
               type="text"
               placeholder="Write your last name here"
+              value={formData.lastName}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -60,23 +93,27 @@ const Contact = () => {
               name="email"
               type="text"
               placeholder="Write your email here"
+              value={formData.email}
+              onChange={handleChange}
             />
           </div>
           <div>
-            <label name="Name" className={styles.label}>
+            <label name="message" className={styles.label}>
               Message
             </label>
             <textarea
               cols={22}
               rows={5}
-              name="Name"
+              name="message"
               type="text"
               placeholder="Write your message here"
+              value={formData.message}
+              onChange={handleChange}
               className={styles.input}
             />
           </div>
           <div>
-            <button type="button" className={styles.submitBtn} onClick={openModalConfirm}>
+            <button type="button" className={styles.submitBtn} onClick={handleSubmit}>
               Submit
             </button>
           </div>
