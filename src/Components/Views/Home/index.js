@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
       <div className={styles.container}>
+        <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Welcome</h2>
         <HamburguerMenu />
-        <h2>Welcome</h2>
         <DarkBtn onClick={toggleDarkMode} isDarkMode={isDarkMode} />
       </div>
       <section>

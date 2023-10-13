@@ -1,9 +1,33 @@
 .darkMode {
-  background-color: black;
-  color: white;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  right: 50px;
+  top: 3px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  animation: darkMode 1s forwards;
 }
 
 .lightMode {
-  background-color: white;
-  color: black;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  right: 50px;
+  top: 3px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  animation: lightMode 1s forwards;
+}
+
+@keyframes darkMode {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lightMode {
+  100% {
+    opacity: 1;
+  }
 }

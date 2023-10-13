@@ -3,16 +3,17 @@ import styles from './darkBtn.module.css';
 
 const darkBtn = ({ onClick, isDarkMode }) => {
   const handleClick = () => {
-    onClick && onClick(); // Llama a la función onClick si está definida
+    onClick && onClick();
   };
 
   return (
-    <button
-      className={isDarkMode ? `${styles.darkMode}` : `${styles.lightMode}`}
-      onClick={handleClick}
-    >
-      {isDarkMode ? 'Modo Claro' : 'Modo Oscuro'}
-    </button>
+    <div onClick={handleClick}>
+      {isDarkMode ? (
+        <img className={styles.darkMode} src="assets/darkMode.svg" />
+      ) : (
+        <img className={styles.lightMode} src="assets/lightMode.svg" />
+      )}
+    </div>
   );
 };
 
