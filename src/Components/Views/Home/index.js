@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './home.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
+import DarkBtn from '../../Shared/DarkBtn';
 
 const Home = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <main className={styles.main}>
+    <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
       <div className={styles.container}>
         <HamburguerMenu />
         <h2>Welcome</h2>
+        <DarkBtn onClick={toggleDarkMode} isDarkMode={isDarkMode} />
       </div>
       <section>
         <div className={styles.boxParagraph}>
