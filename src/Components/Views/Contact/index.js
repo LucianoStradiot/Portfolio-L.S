@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './contact.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 import Modal from '../../Shared/Modal';
+import DarkBtn from '../../Shared/DarkBtn';
 import { useNavigate } from 'react-router-dom';
 import Loader from '../../Shared/Loader';
 
@@ -9,6 +10,8 @@ const Contact = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   const [responseModal, setResponseModal] = useState({
     description: '',
     isConfirm: false
@@ -19,6 +22,10 @@ const Contact = () => {
     email: '',
     message: ''
   });
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,7 +59,7 @@ const Contact = () => {
   return (
     <>
       {isLoading && <Loader />}
-      <main className={styles.main}>
+      <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
         <div className={styles.container}>
           <HamburguerMenu />
           <Modal
@@ -60,7 +67,8 @@ const Contact = () => {
             isOpen={isOpen}
             handleClose={() => (responseModal.isConfirm ? navigate('/') : setIsOpen(false))}
           />
-          <h2>Contact</h2>
+          <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Contact</h2>
+          <DarkBtn onClick={toggleDarkMode} isDarkMode={isDarkMode} />
         </div>
         <form>
           <div className={styles.formContainer}>
