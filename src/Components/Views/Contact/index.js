@@ -61,7 +61,7 @@ const Contact = () => {
       {isLoading && <Loader />}
       <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
         <div className={styles.container}>
-          <HamburguerMenu />
+          <HamburguerMenu darkMode={isDarkMode} />
           <Modal
             desc={responseModal.description}
             isOpen={isOpen}

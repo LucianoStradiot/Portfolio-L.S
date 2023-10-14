@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './hamburguermenu.module.css';
 
-const HamburguerMenu = () => {
+const HamburguerMenu = ({ darkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,11 +12,27 @@ const HamburguerMenu = () => {
   return (
     <>
       <div className={styles.menuButton} id="menuButton" onClick={toggleMenu}>
-        <div className={`${menuOpen ? styles.x1 : styles.bar}`}></div>
-        <div className={`${menuOpen ? styles.x2 : styles.bar}`}></div>
-        <div className={`${menuOpen ? '' : styles.bar}`}></div>
+        <div
+          className={`${menuOpen ? styles.x1 : styles.bar} ${
+            darkMode ? (menuOpen ? styles.darkModex1 : styles.darkModeBar) : ''
+          }`}
+        ></div>
+        <div
+          className={`${menuOpen ? styles.x2 : styles.bar} ${
+            darkMode ? (menuOpen ? styles.darkModex2 : styles.darkModeBar) : ''
+          }`}
+        ></div>
+        <div
+          className={`${menuOpen ? '' : styles.bar} ${
+            darkMode ? (menuOpen ? '' : styles.darkModeBar) : ''
+          }`}
+        ></div>
       </div>
-      <nav className={`${menuOpen ? styles.activeMenu : styles.menu}`}>
+      <nav
+        className={`${menuOpen ? styles.activeMenu : styles.menu} ${
+          darkMode ? styles.darkMode : ''
+        }`}
+      >
         <ul>
           <li>
             <Link to="/">Home</Link>

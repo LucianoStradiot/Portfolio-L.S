@@ -41,6 +41,37 @@
   transition: transform 0.3s ease-in-out;
   box-shadow: 1px 2px 5px #000;
 }
+
+.darkModeBar {
+  width: 25px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  transform: translate(0%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 1px 1px 4px #000;
+}
+
+.darkModex1 {
+  width: 25px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  transform: rotate(-45deg) translate(-3px, 6px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: -1px 2px 5px #000;
+}
+
+.darkModex2 {
+  width: 25px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  transform: rotate(45deg) translate(0px, -2px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 1px 2px 5px #000;
+}
+
 /* This is when the menu folds */
 
 .menu {

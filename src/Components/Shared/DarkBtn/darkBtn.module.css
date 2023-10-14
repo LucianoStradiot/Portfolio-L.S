@@ -1,23 +1,25 @@
 .darkMode {
-  position: relative;
+  position: fixed;
   width: 30px;
   height: 30px;
-  right: 50px;
-  top: 3px;
+  right: 95px;
+  top: 154px;
   opacity: 0;
   transition: opacity 1s ease;
   animation: darkMode 1s forwards;
+  z-index: 99;
 }
 
 .lightMode {
-  position: relative;
+  position: fixed;
   width: 30px;
   height: 30px;
-  right: 50px;
-  top: 3px;
+  right: 95px;
+  top: 154px;
   opacity: 0;
   transition: opacity 1s ease;
   animation: lightMode 1s forwards;
+  z-index: 99;
 }
 
 @keyframes darkMode {

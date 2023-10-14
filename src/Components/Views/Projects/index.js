@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
       <div className={styles.container}>
-        <HamburguerMenu />
+        <HamburguerMenu darkMode={isDarkMode} />
         <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Projects</h2>
         <DarkBtn onClick={toggleDarkMode} isDarkMode={isDarkMode} />
       </div>
