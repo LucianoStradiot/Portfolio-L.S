@@ -28,11 +28,7 @@ const HamburguerMenu = ({ darkMode }) => {
           }`}
         ></div>
       </div>
-      <nav
-        className={`${menuOpen ? styles.activeMenu : styles.menu} ${
-          darkMode ? styles.darkMode : ''
-        }`}
-      >
+      <nav className={`${menuOpen ? styles.activeMenu : styles.menu}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
