@@ -1,14 +1,31 @@
+.main {
+  background: linear-gradient(to bottom, #ffffff, #382039);
+  animation: lightMode 1s forwards;
+  opacity: 0.7;
+  overflow-x: hidden;
+}
+
+.darkMode {
+  background: linear-gradient(to bottom, #683d69, #000);
+  animation: darkMode 1s forwards;
+  opacity: 0.7;
+  overflow-x: hidden;
+}
+
+.title {
+  color: #683d69;
+}
+
+.titleDarkMode {
+  color: #fff;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 40px;
   color: #683d69;
-}
-
-.main {
-  background: linear-gradient(to bottom, #ffffff, #382039);
-  overflow-x: hidden;
 }
 
 .formContainer {
@@ -18,6 +35,18 @@
   text-align: center;
   background-color: aliceblue;
   box-shadow: 4px 4px 8px #000;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: slideInFromTop 1s ease-in forwards;
+}
+
+.darkFormContainer {
+  margin: 9% 10% 24%;
+  padding: 9% 0;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(56, 57, 59);
+  box-shadow: 4px 4px 8px #ffffff54;
   opacity: 0;
   transform: translateY(-100px);
   animation: slideInFromTop 1s ease-in forwards;
@@ -33,12 +62,35 @@
   animation: slideInFromRight 1s ease-in forwards;
 }
 
+.darkLabel {
+  display: block;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0;
+  color: #fff;
+  transform: translateX(-100px);
+  animation: slideInFromRight 1s ease-in forwards;
+}
+
 .input {
   padding: 3% 5%;
   margin-bottom: 10px;
   width: 60%;
   border-radius: 5px;
   border: 2px solid #683d69;
+  font-style: italic;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInFromLeft 1s ease-in forwards;
+}
+
+.darkInput {
+  padding: 3% 5%;
+  margin-bottom: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 2px solid #fff;
   font-style: italic;
   opacity: 0;
   transform: translateX(-100px);
@@ -87,6 +139,20 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes darkMode {
+  100% {
+    opacity: 1;
+    background: linear-gradient(to bottom, #683d69, #000);
+  }
+}
+
+@keyframes lightMode {
+  100% {
+    opacity: 1;
+    background: linear-gradient(to bottom, #ffffff, #382039);
   }
 }
 

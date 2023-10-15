@@ -1,16 +1,25 @@
 import React from 'react';
 import styles from './home.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
+import DarkBtn from '../../Shared/DarkBtn';
+import { useDarkMode } from '../../Shared/DarkBtn/darkModeContext';
 
 const Home = () => {
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <main className={styles.main}>
+    <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
       <div className={styles.container}>
         <HamburguerMenu />
-        <h2>Welcome</h2>
+        <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Welcome</h2>
+        <DarkBtn onClick={toggleDarkMode} />
       </div>
       <section>
-        <div className={styles.boxParagraph}>
+        <div className={`${isDarkMode ? styles.darkBoxParagraph : styles.boxParagraph}`}>
           <p className={styles.paragraph}>
             My name is Luciano and I am currently in my second year of a Software Development
             collegue carrer and I have just graduated as a Full Stack Developer from the Bootcamp

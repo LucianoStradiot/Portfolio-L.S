@@ -24,6 +24,19 @@
   z-index: 999;
 }
 
+.darkModalContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(56, 57, 59);
+  z-index: 999;
+}
+
 .modalContainer h3 {
   color: #683d69;
   font-weight: 700;

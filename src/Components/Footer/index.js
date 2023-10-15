@@ -2,11 +2,13 @@ import React, { useRef, useState, useEffect } from 'react';
 import styles from './footer.module.css';
 import Modal from '../Shared/Modal';
 import WspButton from '../Shared/WspButton';
+import { useDarkMode } from '../Shared/DarkBtn/darkModeContext';
 
 const Footer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
+  const { isDarkMode } = useDarkMode();
   const [responseModal, setResponseModal] = useState({
     title: '',
     description: '',
@@ -39,7 +41,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className={styles.footer}>
+    <footer className={`${isDarkMode ? styles.darkFooter : styles.footer}`}>
       <WspButton />
       <Modal
         title={responseModal.title}

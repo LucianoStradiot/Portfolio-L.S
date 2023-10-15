@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './modal.module.css';
+import { useDarkMode } from '../DarkBtn/darkModeContext';
 
 const Modal = ({ title, desc, isOpen, handleClose, confirmModal, activeFunction }) => {
+  const { isDarkMode } = useDarkMode();
+
   return isOpen ? (
     confirmModal ? (
       <div className={styles.modal}>
-        <div className={styles.modalContainer}>
+        <div className={`${isDarkMode ? styles.darkModalContainer : styles.modalContainer}`}>
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className={styles.btnsContainer}>
@@ -20,7 +23,7 @@ const Modal = ({ title, desc, isOpen, handleClose, confirmModal, activeFunction 
       </div>
     ) : (
       <div className={styles.modal}>
-        <div className={styles.modalContainer}>
+        <div className={`${isDarkMode ? styles.darkModalContainer : styles.modalContainer}`}>
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className={styles.btnContainer}>
