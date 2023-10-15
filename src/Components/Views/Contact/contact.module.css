@@ -46,7 +46,7 @@
   border-radius: 5px;
   text-align: center;
   background-color: rgb(56, 57, 59);
-  box-shadow: 4px 4px 8px #000;
+  box-shadow: 4px 4px 8px #ffffff54;
   opacity: 0;
   transform: translateY(-100px);
   animation: slideInFromTop 1s ease-in forwards;

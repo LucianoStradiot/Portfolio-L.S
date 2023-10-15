@@ -41,9 +41,9 @@
 .darkBoxParagraph {
   padding: 20px;
   margin: 20px 40px;
-  box-shadow: 5px 5px 5px #000;
   border-radius: 5px;
   opacity: 0;
+  box-shadow: 5px 5px 5px #ffffff54;
   color: aliceblue;
   background-color: rgb(56, 57, 59);
   transform: translateX(-100px);
