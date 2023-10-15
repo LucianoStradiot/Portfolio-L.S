@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './darkBtn.module.css';
+import { useDarkMode } from './darkModeContext';
 
-const darkBtn = ({ onClick, isDarkMode }) => {
+const darkBtn = () => {
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
+
   const handleClick = () => {
-    onClick && onClick();
+    setIsDarkMode(!isDarkMode);
   };
 
   return (

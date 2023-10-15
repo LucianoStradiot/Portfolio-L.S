@@ -4,6 +4,12 @@
   height: 80px;
 }
 
+.darkFooter {
+  background: rgb(56, 57, 59);
+  box-shadow: 2px -3px 8px #000;
+  height: 80px;
+}
+
 .container {
   display: flex;
   justify-content: center;

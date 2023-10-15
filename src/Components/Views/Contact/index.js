@@ -3,6 +3,7 @@ import styles from './contact.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 import Modal from '../../Shared/Modal';
 import DarkBtn from '../../Shared/DarkBtn';
+import { useDarkMode } from '../../Shared/DarkBtn/darkModeContext';
 import { useNavigate } from 'react-router-dom';
 import Loader from '../../Shared/Loader';
 
@@ -10,7 +11,7 @@ const Contact = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
 
   const [responseModal, setResponseModal] = useState({
     description: '',

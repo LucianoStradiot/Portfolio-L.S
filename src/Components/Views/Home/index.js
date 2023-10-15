@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './home.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 import DarkBtn from '../../Shared/DarkBtn';
+import { useDarkMode } from '../../Shared/DarkBtn/darkModeContext';
 
 const Home = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -13,9 +14,9 @@ const Home = () => {
   return (
     <main className={`${isDarkMode ? styles.darkMode : styles.main}`}>
       <div className={styles.container}>
-        <HamburguerMenu darkMode={isDarkMode} />
+        <HamburguerMenu />
         <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Welcome</h2>
-        <DarkBtn onClick={toggleDarkMode} isDarkMode={isDarkMode} />
+        <DarkBtn onClick={toggleDarkMode} />
       </div>
       <section>
         <div className={`${isDarkMode ? styles.darkBoxParagraph : styles.boxParagraph}`}>

@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import styles from './projects.module.css';
 import HamburguerMenu from '../../Shared/HamburguerMenu';
 import DarkBtn from '../../Shared/DarkBtn';
+import { useDarkMode } from '../../Shared/DarkBtn/darkModeContext';
 
 const Projects = () => {
   const [showMegarocketContent, setShowMegarocketContent] = useState(false);
   const [showNutritionistContent, setShowNutritionistContent] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
