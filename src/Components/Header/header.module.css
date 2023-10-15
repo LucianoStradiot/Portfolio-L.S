@@ -52,6 +52,9 @@
   .container {
     justify-content: space-around;
   }
+  .darkContainer {
+    justify-content: space-around;
+  }
   .photo {
     width: 100px;
     height: 100px;
