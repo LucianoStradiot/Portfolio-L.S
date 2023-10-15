@@ -50,7 +50,7 @@ const Projects = () => {
             alt="megarocket-app"
             className={styles.projectsImages1}
           />
-          <p className={styles.boxParagraph1}>
+          <p className={`${isDarkMode ? styles.darkBoxParagraph1 : styles.boxParagraph1}`}>
             {getShortenedContent(megarocketContent, 1)}
             {!showMegarocketContent && (
               <button className={styles.readmoreBtn} onClick={() => toggleContent(1)}>
@@ -80,7 +80,7 @@ const Projects = () => {
             alt="nutritionist-valentina"
             className={styles.projectsImages2}
           />
-          <p className={styles.boxParagraph2}>
+          <p className={`${isDarkMode ? styles.darkBoxParagraph2 : styles.boxParagraph2}`}>
             {getShortenedContent(nutritionistContent, 2)}
             {!showNutritionistContent && (
               <button className={styles.readmoreBtn} onClick={() => toggleContent(2)}>

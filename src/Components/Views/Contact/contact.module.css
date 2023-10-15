@@ -40,6 +40,18 @@
   animation: slideInFromTop 1s ease-in forwards;
 }
 
+.darkFormContainer {
+  margin: 9% 10% 24%;
+  padding: 9% 0;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(56, 57, 59);
+  box-shadow: 4px 4px 8px #000;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: slideInFromTop 1s ease-in forwards;
+}
+
 .label {
   display: block;
   margin: 5px;
@@ -50,12 +62,35 @@
   animation: slideInFromRight 1s ease-in forwards;
 }
 
+.darkLabel {
+  display: block;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0;
+  color: #fff;
+  transform: translateX(-100px);
+  animation: slideInFromRight 1s ease-in forwards;
+}
+
 .input {
   padding: 3% 5%;
   margin-bottom: 10px;
   width: 60%;
   border-radius: 5px;
   border: 2px solid #683d69;
+  font-style: italic;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInFromLeft 1s ease-in forwards;
+}
+
+.darkInput {
+  padding: 3% 5%;
+  margin-bottom: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 2px solid #fff;
   font-style: italic;
   opacity: 0;
   transform: translateX(-100px);

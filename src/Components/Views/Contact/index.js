@@ -71,13 +71,13 @@ const Contact = () => {
           <DarkBtn onClick={toggleDarkMode} isDarkMode={isDarkMode} />
         </div>
         <form>
-          <div className={styles.formContainer}>
+          <div className={`${isDarkMode ? styles.darkFormContainer : styles.formContainer}`}>
             <div>
-              <label name="name" className={styles.label}>
+              <label name="name" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
                 Name
               </label>
               <input
-                className={styles.input}
+                className={`${isDarkMode ? styles.darkInput : styles.input}`}
                 name="name"
                 type="text"
                 placeholder="Write your name here"
@@ -86,11 +86,11 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label name="lastName" className={styles.label}>
+              <label name="lastName" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
                 Last Name
               </label>
               <input
-                className={styles.input}
+                className={`${isDarkMode ? styles.darkInput : styles.input}`}
                 name="lastName"
                 type="text"
                 placeholder="Write your last name here"
@@ -99,11 +99,11 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label name="email" className={styles.label}>
+              <label name="email" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
                 Email
               </label>
               <input
-                className={styles.input}
+                className={`${isDarkMode ? styles.darkInput : styles.input}`}
                 name="email"
                 type="text"
                 placeholder="Write your email here"
@@ -112,10 +112,11 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label name="message" className={styles.label}>
+              <label name="message" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
                 Message
               </label>
               <textarea
+                className={`${isDarkMode ? styles.darkInput : styles.input}`}
                 cols={22}
                 rows={5}
                 name="message"
@@ -123,7 +124,6 @@ const Contact = () => {
                 placeholder="Write your message here"
                 value={formData.message}
                 onChange={handleChange}
-                className={styles.input}
               />
             </div>
             <div>
