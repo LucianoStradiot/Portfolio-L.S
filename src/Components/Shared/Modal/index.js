@@ -8,7 +8,7 @@ const Modal = ({ title, desc, isOpen, handleClose, confirmModal, activeFunction 
   return isOpen ? (
     confirmModal ? (
       <div className={styles.modal}>
-        <div className={`${isDarkMode ? styles.darkModalContainer : styles.modalContainer}`}>
+        <div className={styles.modalContainer}>
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className={styles.btnsContainer}>

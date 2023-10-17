@@ -12,9 +12,15 @@ const darkBtn = () => {
   return (
     <div onClick={handleClick}>
       {isDarkMode ? (
-        <img className={styles.darkMode} src="assets/darkMode.svg" />
+        <>
+          <span className={styles.container}>Mode</span>
+          <img className={styles.darkMode} src="assets/darkMode.svg" />
+        </>
       ) : (
-        <img className={styles.lightMode} src="assets/lightMode.svg" />
+        <>
+          <span className={styles.container2}>Mode</span>
+          <img className={styles.darkMode} src="assets/lightMode.svg" />
+        </>
       )}
     </div>
   );

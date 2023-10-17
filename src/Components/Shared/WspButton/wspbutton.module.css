@@ -1,8 +1,8 @@
 .btnWsp {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  line-height: 58px;
+  width: 50px;
+  height: 48px;
+  line-height: 50px;
   bottom: 30px;
   left: 20px;
   background: #12c74b;
@@ -13,6 +13,24 @@
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
+
+.darkBtnWsp {
+  position: fixed;
+  width: 50px;
+  height: 48px;
+  line-height: 50px;
+  bottom: 30px;
+  left: 20px;
+  background: #683d69;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  border: 1px #fff solid;
+  font-size: 36px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
 .btnWsp:hover {
   text-decoration: none;
   color: #12c74b;
@@ -21,10 +39,15 @@
   animation: shake 0.4s;
   animation-iteration-count: calc(3);
 }
-.pulse {
-  animation: pulse-animation 2s infinite;
+
+.darkPulse {
+  animation: darkPulseAnimation 2s infinite;
 }
-@keyframes pulse-animation {
+
+.pulse {
+  animation: pulseAnimation 2s infinite;
+}
+@keyframes pulseAnimation {
   0% {
     box-shadow: 0 0 0 0px #25d3667a;
   }
@@ -32,6 +55,16 @@
     box-shadow: 0 0 0 25px rgba(50, 40, 30, 0);
   }
 }
+
+@keyframes darkPulseAnimation {
+  0% {
+    box-shadow: 0 0 0 0px #ffffffb9;
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(50, 40, 30, 0);
+  }
+}
+
 @keyframes shake {
   0% {
     transform: translateX(0);
@@ -50,7 +83,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) {
   .btnWsp {
     width: 50px;
     height: 48px;

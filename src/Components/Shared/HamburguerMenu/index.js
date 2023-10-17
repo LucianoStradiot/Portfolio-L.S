@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './hamburguermenu.module.css';
 import { useDarkMode } from '../DarkBtn/darkModeContext';
+import DarkBtn from '../DarkBtn';
 
 const HamburguerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,6 +45,11 @@ const HamburguerMenu = () => {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link>
+              <DarkBtn />
+            </Link>
           </li>
         </ul>
       </nav>
