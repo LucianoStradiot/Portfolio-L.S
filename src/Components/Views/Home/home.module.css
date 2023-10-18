@@ -126,5 +126,49 @@
 @media only screen and (min-width: 601px) {
   .container {
     display: block;
+    margin: 0 19%;
+  }
+
+  .boxParagraph {
+    margin: 0 19%;
+  }
+
+  .darkBoxParagraph {
+    margin: 0 19%;
+  }
+
+  .containerTechnologies {
+    margin: 7% 19%;
+  }
+
+  .wraperTechnologies {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    margin: 0 25%;
+  }
+
+  .boxParagraph {
+    margin: 0 25%;
+  }
+
+  .darkBoxParagraph {
+    margin: 0 25%;
+  }
+
+  .containerTechnologies {
+    margin: 7% 25%;
+  }
+
+  .wraperTechnologies {
+    margin-top: 40px;
+  }
+
+  .icons {
+    max-width: 90px;
+    width: 14%;
   }
 }
