@@ -38,13 +38,9 @@ const Projects = () => {
         <HamburguerMenu darkMode={isDarkMode} />
         <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Projects</h2>
       </div>
-      <section>
+      <section className={styles.generalSection}>
         <div className={styles.sectionProjects}>
-          <img
-            src="assets/megarocket.png"
-            alt="megarocket-app"
-            className={styles.projectsImages1}
-          />
+          <img src="assets/megarocket.png" alt="megarocket-app" className={styles.projectsImages} />
           <p className={`${isDarkMode ? styles.darkBoxParagraph1 : styles.boxParagraph1}`}>
             {getShortenedContent(megarocketContent, 1)}
             {!showMegarocketContent && (
@@ -73,7 +69,7 @@ const Projects = () => {
           <img
             src="assets/nutritionistValen.png"
             alt="nutritionist-valentina"
-            className={styles.projectsImages2}
+            className={styles.projectsImages}
           />
           <p className={`${isDarkMode ? styles.darkBoxParagraph2 : styles.boxParagraph2}`}>
             {getShortenedContent(nutritionistContent, 2)}
