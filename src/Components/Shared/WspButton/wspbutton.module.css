@@ -14,6 +14,19 @@
   z-index: 100;
 }
 
+.btnWsp:hover {
+  text-decoration: none;
+  color: #12c74b;
+  background: #fff;
+  transition: 1s ease-in-out;
+  animation: shake 0.4s;
+  animation-iteration-count: calc(3);
+}
+
+.pulse {
+  animation: pulseAnimation 2s infinite;
+}
+
 .darkBtnWsp {
   position: fixed;
   width: 50px;
@@ -31,9 +44,9 @@
   z-index: 100;
 }
 
-.btnWsp:hover {
+.darkBtnWsp:hover {
   text-decoration: none;
-  color: #12c74b;
+  color: #683d69;
   background: #fff;
   transition: 1s ease-in-out;
   animation: shake 0.4s;
@@ -44,9 +57,6 @@
   animation: darkPulseAnimation 2s infinite;
 }
 
-.pulse {
-  animation: pulseAnimation 2s infinite;
-}
 @keyframes pulseAnimation {
   0% {
     box-shadow: 0 0 0 0px #25d3667a;
@@ -85,8 +95,12 @@
 
 @media only screen and (min-width: 601px) {
   .btnWsp {
-    width: 50px;
-    height: 48px;
-    line-height: 50px;
+    bottom: 40px;
+    left: 50px;
+  }
+
+  .darkBtnWsp {
+    bottom: 40px;
+    left: 50px;
   }
 }

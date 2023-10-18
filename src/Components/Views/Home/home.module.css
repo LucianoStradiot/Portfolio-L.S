@@ -137,30 +137,51 @@
     margin: 0 19%;
   }
 
+  .paragraph {
+    font-size: 1.2em;
+  }
+
   .containerTechnologies {
-    margin: 7% 19%;
+    margin: 40px 19%;
   }
 
   .wraperTechnologies {
     margin-top: 40px;
   }
+
+  .icons {
+    max-width: 75px;
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
   .container {
-    margin: 0 25%;
+    margin: 0 22%;
   }
 
   .boxParagraph {
-    margin: 0 25%;
+    margin: 0 22%;
   }
 
   .darkBoxParagraph {
-    margin: 0 25%;
+    margin: 0 22%;
+  }
+
+  .paragraph {
+    font-size: 1.3em;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+
+  .titleDarkMode {
+    font-size: 1.7em;
   }
 
   .containerTechnologies {
-    margin: 7% 25%;
+    margin: 60px 22%;
   }
 
   .wraperTechnologies {
