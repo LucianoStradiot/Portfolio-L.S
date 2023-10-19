@@ -38,62 +38,68 @@ const Projects = () => {
         <HamburguerMenu darkMode={isDarkMode} />
         <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Projects</h2>
       </div>
-      <section className={styles.generalSection}>
-        <div className={styles.sectionProjects}>
-          <img src="assets/megarocket.png" alt="megarocket-app" className={styles.projectsImages} />
-          <p className={`${isDarkMode ? styles.darkBoxParagraph1 : styles.boxParagraph1}`}>
-            {getShortenedContent(megarocketContent, 1)}
-            {!showMegarocketContent && (
-              <button className={styles.readmoreBtn} onClick={() => toggleContent(1)}>
-                Read More...
-              </button>
-            )}
-            {showMegarocketContent && (
-              <>
-                <a
-                  href="https://mega-rocket-app.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.projectLink}
-                >
-                  View the project
-                </a>
+      <section>
+        <div className={styles.generalSection}>
+          <div className={styles.sectionProjects}>
+            <img
+              src="assets/megarocket.png"
+              alt="megarocket-app"
+              className={styles.projectsImages}
+            />
+            <p className={`${isDarkMode ? styles.darkBoxParagraph1 : styles.boxParagraph1}`}>
+              {getShortenedContent(megarocketContent, 1)}
+              {!showMegarocketContent && (
                 <button className={styles.readmoreBtn} onClick={() => toggleContent(1)}>
-                  Close
+                  Read More...
                 </button>
-              </>
-            )}
-          </p>
-        </div>
-        <div className={styles.sectionProjects}>
-          <img
-            src="assets/nutritionistValen.png"
-            alt="nutritionist-valentina"
-            className={styles.projectsImages}
-          />
-          <p className={`${isDarkMode ? styles.darkBoxParagraph2 : styles.boxParagraph2}`}>
-            {getShortenedContent(nutritionistContent, 2)}
-            {!showNutritionistContent && (
-              <button className={styles.readmoreBtn} onClick={() => toggleContent(2)}>
-                Read More...
-              </button>
-            )}
-            {showNutritionistContent && (
-              <>
-                <a
-                  href="https://nutricionista-valentina-lansellota.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.projectLink}
-                >
-                  View the project
-                </a>
+              )}
+              {showMegarocketContent && (
+                <>
+                  <a
+                    href="https://mega-rocket-app.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    View the project
+                  </a>
+                  <button className={styles.readmoreBtn} onClick={() => toggleContent(1)}>
+                    Close
+                  </button>
+                </>
+              )}
+            </p>
+          </div>
+          <div className={styles.sectionProjects}>
+            <img
+              src="assets/nutritionistValen.png"
+              alt="nutritionist-valentina"
+              className={styles.projectsImages}
+            />
+            <p className={`${isDarkMode ? styles.darkBoxParagraph2 : styles.boxParagraph2}`}>
+              {getShortenedContent(nutritionistContent, 2)}
+              {!showNutritionistContent && (
                 <button className={styles.readmoreBtn} onClick={() => toggleContent(2)}>
-                  Close
+                  Read More...
                 </button>
-              </>
-            )}
-          </p>
+              )}
+              {showNutritionistContent && (
+                <>
+                  <a
+                    href="https://nutricionista-valentina-lansellota.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.projectLink}
+                  >
+                    View the project
+                  </a>
+                  <button className={styles.readmoreBtn} onClick={() => toggleContent(2)}>
+                    Close
+                  </button>
+                </>
+              )}
+            </p>
+          </div>
         </div>
       </section>
     </main>

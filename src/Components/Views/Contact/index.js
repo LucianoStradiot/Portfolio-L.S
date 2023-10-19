@@ -65,7 +65,7 @@ const Contact = () => {
           />
           <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Contact</h2>
         </div>
-        <form>
+        <form className={styles.form}>
           <div className={`${isDarkMode ? styles.darkFormContainer : styles.formContainer}`}>
             <div>
               <label name="name" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
