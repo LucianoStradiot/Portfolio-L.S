@@ -161,11 +161,17 @@
   }
 
   .boxParagraph {
-    margin: 0 22%;
+    margin: 0 29%;
+    min-width: 400px;
+    max-width: 700px;
+    width: 40%;
   }
 
   .darkBoxParagraph {
-    margin: 0 22%;
+    margin: 0 29%;
+    min-width: 400px;
+    max-width: 700px;
+    width: 40%;
   }
 
   .paragraph {

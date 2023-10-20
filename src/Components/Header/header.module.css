@@ -74,6 +74,10 @@
 }
 
 @media only screen and (min-width: 1025px) {
+  .subContainer {
+    margin: 5px 10px;
+  }
+
   .nameStyle {
     font-size: 1.4rem;
   }

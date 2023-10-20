@@ -209,28 +209,15 @@
   }
 
   .form {
-    display: block;
     margin: 50px 35%;
-    box-sizing: border-box;
     width: 40%;
-    max-width: 500px;
   }
 
-  .input {
-    padding: 15px 5%;
+  .title {
+    font-size: 1.7em;
   }
 
-  .darkInput {
-    padding: 15px 5%;
-  }
-
-  .formContainer {
-    margin: 0;
-    padding: 50px 0;
-  }
-
-  .darkFormContainer {
-    margin: 0;
-    padding: 50px 0;
+  .titleDarkMode {
+    font-size: 1.7em;
   }
 }

@@ -179,13 +179,39 @@
 
   .generalSection {
     display: flex;
-    margin: 0 20%;
+    justify-content: space-between;
+    margin: 40px 19% 120px;
     max-width: 1200px;
-    width: 60%;
+    width: 63%;
     box-sizing: border-box;
   }
 
   .sectionProjects {
     margin: 20px;
+    width: 50%;
+  }
+
+  .boxParagraph1 {
+    font-size: 1.1rem;
+  }
+
+  .darkBoxParagraph1 {
+    font-size: 1.1rem;
+  }
+
+  .boxParagraph2 {
+    font-size: 1.1rem;
+  }
+
+  .darkBoxParagraph2 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+
+  .titleDarkMode {
+    font-size: 1.7em;
   }
 }
