@@ -170,6 +170,32 @@
   .generalSection {
     margin: 0 15%;
   }
+
+  .projectLink {
+    margin: 10px 0;
+    border: 1px #683d69 solid;
+    transition: color 0.8s ease-in-out;
+  }
+
+  .projectLink:hover {
+    color: #683d69;
+    background-color: #fff;
+    transition:
+      color,
+      background-color 0.8s ease-in-out;
+  }
+
+  .readmoreBtn {
+    border: 1px #683d69 solid;
+    cursor: pointer;
+  }
+
+  .readmoreBtn:hover {
+    border: 1px #000 solid;
+    color: #000;
+    font-weight: 600;
+    background-color: #fff;
+  }
 }
 
 @media only screen and (min-width: 1025px) {

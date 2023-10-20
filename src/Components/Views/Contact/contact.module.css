@@ -201,6 +201,24 @@
     margin: 0;
     padding: 50px 0;
   }
+
+  .submitBtn {
+    border: 1px #683d69 solid;
+    cursor: pointer;
+    transition:
+      color,
+      background-color 0.3s ease-in-out;
+  }
+
+  .submitBtn:hover {
+    border: 1px #000 solid;
+    color: #000;
+    font-weight: 600;
+    background-color: #fff;
+    transition:
+      color,
+      background-color 0.3s ease-in-out;
+  }
 }
 
 @media only screen and (min-width: 1025px) {

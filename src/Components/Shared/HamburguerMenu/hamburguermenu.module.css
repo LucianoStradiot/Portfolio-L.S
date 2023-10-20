@@ -193,7 +193,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
   }
 
   .menu li {
@@ -212,7 +212,7 @@
     background-color: #683d69;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   .menu li:hover::before {
@@ -223,13 +223,13 @@
   .menu a {
     text-decoration: none;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
   }
 
   .menu a:hover {
     color: #683d69;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
 
   .darkMenu {
@@ -263,7 +263,7 @@
     background-color: #000;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   .darkMenu li:hover::before {
@@ -271,15 +271,19 @@
     transform-origin: left;
   }
 
+  .darkBtn:hover::before {
+    content: none;
+  }
+
   .darkMenu a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
   }
 
   .darkMenu a:hover {
     color: #000;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
 }

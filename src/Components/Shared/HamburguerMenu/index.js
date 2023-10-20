@@ -46,7 +46,7 @@ const HamburguerMenu = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          <li>
+          <li className={styles.darkBtn}>
             <Link>
               <DarkBtn />
             </Link>
