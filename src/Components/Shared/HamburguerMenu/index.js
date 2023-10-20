@@ -46,10 +46,8 @@ const HamburguerMenu = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          <li className={styles.darkBtn}>
-            <Link>
-              <DarkBtn />
-            </Link>
+          <li className={`${isDarkMode ? styles.darkBtnLight : styles.darkBtn}`}>
+            <DarkBtn />
           </li>
         </ul>
       </nav>

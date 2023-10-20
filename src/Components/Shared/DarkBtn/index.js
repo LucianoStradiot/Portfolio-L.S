@@ -10,7 +10,7 @@ const darkBtn = () => {
   };
 
   return (
-    <div onClick={handleClick}>
+    <div className={styles.generalContainer} onClick={handleClick}>
       {isDarkMode ? (
         <>
           <span className={styles.container}>Mode</span>
