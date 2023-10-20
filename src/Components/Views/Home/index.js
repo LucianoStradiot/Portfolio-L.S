@@ -25,7 +25,7 @@ const Home = () => {
       </section>
       <section>
         <div className={styles.containerTechnologies}>
-          <h2>Technologies</h2>
+          <h2 className={styles.titleDarkMode}>Technologies</h2>
           <div className={styles.wraperTechnologies}>
             <div className={styles.technologies1}>
               <img src="assets/html5.svg" className={styles.icons} alt="HTML5" />

@@ -52,36 +52,49 @@ const Footer = () => {
         activeFunction={() => togglePlay(setIsOpen(!isOpen))}
       />
       <div className={styles.container}>
-        <a
-          href="https://www.linkedin.com/in/luciano-stradiot-343a98142/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="assets/linkedin.png" className={styles.images} />
-        </a>
-        <a href="https://github.com/LucianoStradiot" target="_blank" rel="noreferrer">
-          <img src="assets/github.png" className={styles.images} />
-        </a>
-        <a href="https://www.instagram.com/luchostradiot/" target="_blank" rel="noreferrer">
-          <img src="assets/instagram.png" className={styles.images} />
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100094383460961"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="assets/facebook.png" className={styles.images} />
-        </a>
-        <div onClick={togglePlay}>
-          {isPlaying ? (
-            <img src="assets/pause.svg" className={`${styles.pause} ${styles.images}`} alt="" />
-          ) : (
-            <img src="assets/play.svg" className={`${styles.play} ${styles.images}`} alt="" />
-          )}
-          <audio ref={audioRef} onLoadedData={() => setIsPlaying(false)} loop>
-            <source src="/synthwave.mp3" type="audio/mp3" />
-            Tu navegador no soporta el elemento de audio.
-          </audio>
+        <p className={`${isDarkMode ? styles.darkCopyright : styles.copyright}`}>
+          © Luciano Stradiot 2023
+        </p>
+        <div className={styles.subContainer}>
+          <a
+            href="https://www.linkedin.com/in/luciano-stradiot-343a98142/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/linkedin.png" className={styles.images} />
+          </a>
+          <a href="https://github.com/LucianoStradiot" target="_blank" rel="noreferrer">
+            <img src="assets/github.png" className={styles.images} />
+          </a>
+          <a href="https://www.instagram.com/luchostradiot/" target="_blank" rel="noreferrer">
+            <img src="assets/instagram.png" className={styles.images} />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100094383460961"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/facebook.png" className={styles.images} />
+          </a>
+          <span onClick={togglePlay}>
+            {isPlaying ? (
+              <img
+                src="assets/pause.svg"
+                className={`${isDarkMode ? styles.darkPause : styles.pause} ${styles.images}`}
+                alt="pause"
+              />
+            ) : (
+              <img
+                src="assets/play.svg"
+                className={`${isDarkMode ? styles.darkPlay : styles.play} ${styles.images}`}
+                alt="play"
+              />
+            )}
+            <audio ref={audioRef} onLoadedData={() => setIsPlaying(false)} loop>
+              <source src="/synthwave.mp3" type="audio/mp3" />
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+          </span>
         </div>
       </div>
     </footer>

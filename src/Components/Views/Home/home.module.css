@@ -126,5 +126,76 @@
 @media only screen and (min-width: 601px) {
   .container {
     display: block;
+    margin: 0 19%;
+  }
+
+  .boxParagraph {
+    margin: 0 19%;
+  }
+
+  .darkBoxParagraph {
+    margin: 0 19%;
+  }
+
+  .paragraph {
+    font-size: 1.2em;
+  }
+
+  .containerTechnologies {
+    margin: 40px 19%;
+  }
+
+  .wraperTechnologies {
+    margin-top: 40px;
+  }
+
+  .icons {
+    max-width: 75px;
+    width: 15%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    margin: 0 22%;
+  }
+
+  .boxParagraph {
+    margin: 0 29%;
+    min-width: 400px;
+    max-width: 700px;
+    width: 40%;
+  }
+
+  .darkBoxParagraph {
+    margin: 0 29%;
+    min-width: 400px;
+    max-width: 700px;
+    width: 40%;
+  }
+
+  .paragraph {
+    font-size: 1.3em;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+
+  .titleDarkMode {
+    font-size: 1.7em;
+  }
+
+  .containerTechnologies {
+    margin: 60px 22%;
+  }
+
+  .wraperTechnologies {
+    margin-top: 40px;
+  }
+
+  .icons {
+    max-width: 90px;
+    width: 14%;
   }
 }

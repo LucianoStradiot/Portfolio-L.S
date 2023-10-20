@@ -79,6 +79,7 @@
   width: 60%;
   border-radius: 5px;
   border: 2px solid #683d69;
+  text-align: center;
   font-style: italic;
   opacity: 0;
   transform: translateX(-100px);
@@ -91,6 +92,7 @@
   width: 60%;
   border-radius: 5px;
   border: 2px solid #fff;
+  text-align: center;
   font-style: italic;
   opacity: 0;
   transform: translateX(-100px);
@@ -159,5 +161,134 @@
 @media only screen and (min-width: 601px) {
   .container {
     display: block;
+    margin: 0 19%;
+  }
+
+  .form {
+    display: block;
+    margin: 50px 24%;
+    box-sizing: border-box;
+    width: 56%;
+    max-width: 500px;
+  }
+
+  .darkForm {
+    display: block;
+    margin: 50px 24%;
+    box-sizing: border-box;
+    width: 56%;
+    max-width: 500px;
+  }
+
+  .label {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .darkLabel {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .submitBtn {
+    font-size: 0.9rem;
+  }
+
+  .input {
+    padding: 15px 5%;
+  }
+
+  .darkInput {
+    padding: 15px 5%;
+  }
+
+  .formContainer {
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  .darkFormContainer {
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  .submitBtn {
+    border: 1px #683d69 solid;
+    cursor: pointer;
+    transition:
+      color,
+      background-color 0.3s ease-in-out;
+  }
+
+  .submitBtn:hover {
+    border: 1px #000 solid;
+    color: #000;
+    font-weight: 600;
+    background-color: #fff;
+    transition:
+      color,
+      background-color 0.3s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .form {
+    margin: 50px 30% 150px;
+    max-width: 670px;
+    width: 43%;
+  }
+
+  .darkForm {
+    margin: 50px 30% 150px;
+    max-width: 670px;
+    width: 43%;
+  }
+
+  .container {
+    margin: 0 22%;
+  }
+
+  .formContainer {
+    display: flex;
+    padding: 60px 30px;
+  }
+
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .darkFormContainer {
+    display: flex;
+    padding: 60px 30px;
+  }
+
+  .darkSubContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .input {
+    padding: 15px 15%;
+  }
+
+  .darkInput {
+    padding: 15px 15%;
+  }
+
+  .submitBtn {
+    margin: 13px;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+
+  .titleDarkMode {
+    font-size: 1.7em;
   }
 }

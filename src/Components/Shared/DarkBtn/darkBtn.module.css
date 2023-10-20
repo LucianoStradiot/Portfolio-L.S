@@ -1,5 +1,6 @@
 .container {
   vertical-align: super;
+  color: #fff;
 }
 
 .container2 {
@@ -37,8 +38,17 @@
 }
 
 @media only screen and (min-width: 601px) {
+  .generalContainer {
+    width: 27px;
+    height: 27px;
+  }
+
   .container {
     display: none;
+  }
+
+  .darkMode {
+    margin: 0;
   }
 
   .container2 {
