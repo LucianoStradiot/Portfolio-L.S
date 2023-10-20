@@ -65,66 +65,73 @@ const Contact = () => {
           />
           <h2 className={`${isDarkMode ? styles.titleDarkMode : styles.title}`}>Contact</h2>
         </div>
-        <form className={styles.form}>
+        <form className={`${isDarkMode ? styles.darkForm : styles.form}`}>
           <div className={`${isDarkMode ? styles.darkFormContainer : styles.formContainer}`}>
-            <div>
-              <label name="name" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
-                Name
-              </label>
-              <input
-                className={`${isDarkMode ? styles.darkInput : styles.input}`}
-                name="name"
-                type="text"
-                placeholder="Write your name here"
-                value={formData.name}
-                onChange={handleChange}
-              />
+            <div className={`${isDarkMode ? styles.darkSubContainer : styles.subContainer}`}>
+              <div>
+                <label name="name" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
+                  Name
+                </label>
+                <input
+                  className={`${isDarkMode ? styles.darkInput : styles.input}`}
+                  name="name"
+                  type="text"
+                  placeholder="Write your name here"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <label
+                  name="lastName"
+                  className={`${isDarkMode ? styles.darkLabel : styles.label}`}
+                >
+                  Last Name
+                </label>
+                <input
+                  className={`${isDarkMode ? styles.darkInput : styles.input}`}
+                  name="lastName"
+                  type="text"
+                  placeholder="Write your last name here"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <label name="email" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
+                  Email
+                </label>
+                <input
+                  className={`${isDarkMode ? styles.darkInput : styles.input}`}
+                  name="email"
+                  type="text"
+                  placeholder="Write your email here"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
             </div>
-            <div>
-              <label name="lastName" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
-                Last Name
-              </label>
-              <input
-                className={`${isDarkMode ? styles.darkInput : styles.input}`}
-                name="lastName"
-                type="text"
-                placeholder="Write your last name here"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label name="email" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
-                Email
-              </label>
-              <input
-                className={`${isDarkMode ? styles.darkInput : styles.input}`}
-                name="email"
-                type="text"
-                placeholder="Write your email here"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label name="message" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
-                Message
-              </label>
-              <textarea
-                className={`${isDarkMode ? styles.darkInput : styles.input}`}
-                cols={22}
-                rows={5}
-                name="message"
-                type="text"
-                placeholder="Write your message here"
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <button type="button" className={styles.submitBtn} onClick={handleSubmit}>
-                Submit
-              </button>
+            <div className={`${isDarkMode ? styles.darkSubContainer : styles.subContainer}`}>
+              <div>
+                <label name="message" className={`${isDarkMode ? styles.darkLabel : styles.label}`}>
+                  Message
+                </label>
+                <textarea
+                  className={`${isDarkMode ? styles.darkInput : styles.input}`}
+                  cols={22}
+                  rows={5}
+                  name="message"
+                  type="text"
+                  placeholder="Write your message here"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <button type="button" className={styles.submitBtn} onClick={handleSubmit}>
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </form>

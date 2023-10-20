@@ -20,6 +20,9 @@
 .copyright {
   display: none;
 }
+.darkCopyright {
+  display: none;
+}
 
 .images {
   width: 25px;
@@ -33,6 +36,7 @@
   background-color: #683d69;
   transform: translate(0%);
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .pause {
@@ -41,6 +45,7 @@
   transform: rotate(180deg);
   box-shadow: -2px -2px 5px #000;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .darkPlay {
@@ -48,6 +53,7 @@
   background-color: #fff;
   transform: translate(0%);
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .darkPause {
@@ -56,6 +62,7 @@
   transform: rotate(180deg);
   box-shadow: -2px -2px 5px #000;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 601px) {
@@ -70,7 +77,33 @@
   }
 
   .darkCopyright {
+    display: block;
     color: #fff;
     font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .subContainer {
+    width: 280px;
+  }
+  .images {
+    width: 30px;
+  }
+
+  .play {
+    height: 30px;
+  }
+
+  .pause {
+    height: 30px;
+  }
+
+  .darkPlay {
+    height: 30px;
+  }
+
+  .darkPause {
+    height: 30px;
   }
 }
