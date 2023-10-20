@@ -17,6 +17,10 @@
   height: 80px;
 }
 
+.copyright {
+  display: none;
+}
+
 .images {
   width: 25px;
   margin: 0 10px;
@@ -25,7 +29,6 @@
 }
 
 .play {
-  width: 25px;
   height: 25px;
   background-color: #683d69;
   transform: translate(0%);
@@ -33,10 +36,41 @@
 }
 
 .pause {
-  width: 25px;
   height: 25px;
   background-color: #683d69;
   transform: rotate(180deg);
   box-shadow: -2px -2px 5px #000;
   transition: transform 0.3s ease-in-out;
+}
+
+.darkPlay {
+  height: 25px;
+  background-color: #fff;
+  transform: translate(0%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.darkPause {
+  height: 25px;
+  background-color: #fff;
+  transform: rotate(180deg);
+  box-shadow: -2px -2px 5px #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 601px) {
+  .subContainer {
+    width: 235px;
+    margin-left: 25px;
+  }
+  .copyright {
+    display: block;
+    color: #683d69;
+    font-weight: 600;
+  }
+
+  .darkCopyright {
+    color: #fff;
+    font-weight: 600;
+  }
 }
