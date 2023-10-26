@@ -61,20 +61,20 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="assets/linkedin.png" className={styles.images} />
+            <img src="assets/linkedin.png" className={styles.images} alt="linkedin-icon" />
           </a>
           <a href="https://github.com/LucianoStradiot" target="_blank" rel="noreferrer">
-            <img src="assets/github.png" className={styles.images} />
+            <img src="assets/github.png" className={styles.images} alt="github-icon" />
           </a>
           <a href="https://www.instagram.com/luchostradiot/" target="_blank" rel="noreferrer">
-            <img src="assets/instagram.png" className={styles.images} />
+            <img src="assets/instagram.png" className={styles.images} alt="instagram-icon" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100094383460961"
             target="_blank"
             rel="noreferrer"
           >
-            <img src="assets/facebook.png" className={styles.images} />
+            <img src="assets/facebook.png" className={styles.images} alt="facebook-icon" />
           </a>
           <span onClick={togglePlay}>
             {isPlaying ? (

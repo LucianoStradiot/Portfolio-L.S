@@ -1,16 +1,18 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dev. Luciano Stradiot",
+  "name": "Dev. Luciano Stradiot",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any maskable"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
@@ -20,6 +22,16 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#683d69",
+  "background_color": "#683d69",
+  "color_overrides": {
+    "(prefers-color-scheme: dark)": {
+      "theme_color": "#fff",
+      "background_color": "#000"
+    },
+    "(prefers-color-scheme: light)": {
+      "theme_color": "#000",
+      "background_color": "#fff"
+    }
+  }
 }

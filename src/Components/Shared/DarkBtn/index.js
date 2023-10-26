@@ -14,12 +14,12 @@ const darkBtn = () => {
       {isDarkMode ? (
         <>
           <span className={styles.container}>Mode</span>
-          <img className={styles.darkMode} src="assets/darkMode.svg" />
+          <img className={styles.darkMode} src="assets/darkMode.svg" alt="dark-icon" />
         </>
       ) : (
         <>
           <span className={styles.container2}>Mode</span>
-          <img className={styles.darkMode} src="assets/lightMode.svg" />
+          <img className={styles.darkMode} src="assets/lightMode.svg" alt="light-icon" />
         </>
       )}
     </div>
