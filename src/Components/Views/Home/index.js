@@ -32,18 +32,21 @@ const Home = () => {
               <img src="assets/css3.svg" className={styles.icons} alt="CSS3" />
               <img src="assets/javascript.svg" className={styles.icons} alt="JavaScript" />
               <img src="assets/nodejs.svg" className={styles.icons} alt="NodeJs" />
+              <img src="assets/php.svg" className={styles.icons} alt="Php" />
             </div>
             <div className={styles.technologies2}>
               <img src="assets/express.svg" className={styles.icons} alt="Express" />
               <img src="assets/mongodb.svg" className={styles.icons} alt="MongoDb" />
               <img src="assets/react.svg" className={styles.icons} alt="ReactJs" />
               <img src="assets/redux.svg" className={styles.icons} alt="ReduxJs" />
+              <img src="assets/mysql.svg" className={styles.icons} alt="Mysql" />
             </div>
             <div className={styles.technologies1}>
               <img src="assets/firebase.svg" className={styles.icons} alt="Firebase" />
               <img src="assets/scrum.svg" className={styles.icons} alt="Scrum" />
               <img src="assets/trello.svg" className={styles.icons} alt="Trello" />
               <img src="assets/github.svg" className={styles.icons} alt="Github" />
+              <img src="assets/postman.svg" className={styles.icons} alt="Postman" />
             </div>
           </div>
         </div>
