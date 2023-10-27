@@ -3,13 +3,13 @@
   "name": "Dev. Luciano Stradiot",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon2.ico",
       "sizes": "16x16",
       "type": "image/x-icon",
       "purpose": "maskable"
     },
     {
-      "src": "favicon2.ico",
+      "src": "favicon.ico",
       "sizes": "144x144",
       "type": "image/x-icon",
       "purpose": "maskable"
