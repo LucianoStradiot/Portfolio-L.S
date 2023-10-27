@@ -3,19 +3,13 @@
   "name": "Dev. Luciano Stradiot",
   "icons": [
     {
-      "src": "favicon2.ico",
+      "src": "favicon.ico",
       "sizes": "16x16",
       "type": "image/x-icon",
       "purpose": "maskable"
     },
     {
-      "src": "favicon.ico",
-      "sizes": "144x144",
-      "type": "image/x-icon",
-      "purpose": "maskable"
-    },
-    {
-      "src": "favicon.ico",
+      "src": "favicon2.ico",
       "sizes": "144x144",
       "type": "image/x-icon",
       "purpose": "maskable"
@@ -35,5 +29,5 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#683d69"
+  "theme_color": "aliceblue"
 }
